@@ -4,7 +4,7 @@ class App{
     this.handleGetGradesSuccess = this.handleGetGradesSuccess.bind(this);
     this.gradeTable = gradeTable;
     this.pageHeader = pageHeader;
-    this.gradeTable = gradeForm;
+    this.gradeForm = gradeForm;
   }
   handleGetGradesError(error) {
     console.error(error);
