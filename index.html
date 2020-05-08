@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Grade Table</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css">
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -13,21 +14,56 @@
     <h3 class="col-3">Student Average <span class="badge badge-secondary"></span></h3>
   </header>
 
-  <table class="table table-bordered table-striped" id="grade-table">
-    <thead class="table-dark">
-      <th>Student Name</th>
-      <th>Course</th>
-      <th>Grade</th>
-    </thead>
-    <tbody>
+  <main class="row">
+    <table class="table table-bordered table-striped col-7" id="grade-table">
+      <thead class="table-dark">
+        <th>Student Name</th>
+        <th>Course</th>
+        <th>Grade</th>
+      </thead>
+      <tbody>
 
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+    <!-- Form -->
+    <form action="" class="col-4">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+        <input type="text" id="name" name="name" placeholder="Name" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="far fa-list-alt"></i>
+          </span>
+        </div>
+        <input type="text" id="course" name="course" placeholder="Course" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fas fa-graduation-cap"></i>
+          </span>
+        </div>
+        <input type="text" id="grade" name="grade" placeholder="Grade" class="form-control">
+      </div>
+      <div class="buttons">
+        <button type="submit" class="btn btn-success">Add</button>
+        <button type="reset" class="btn">Cancel</button>
+      </div>
+    </form>
+
+  </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
   <script src="components/app.js"></script>
   <script src="components/grade-table.js"></script>
   <script src="components/page-header.js"></script>
+  <script src="components/grade-form.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
