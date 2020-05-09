@@ -1,5 +1,6 @@
 var tableEl = document.getElementById('grade-table');
-var summonGrades = new GradeTable(tableEl);
+var noGrades = document.getElementById('no-grades');
+var summonGrades = new GradeTable(tableEl, noGrades);
 
 var headerEl = document.getElementById('header');
 var updateHeader = new PageHeader(headerEl);
