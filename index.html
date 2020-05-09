@@ -9,55 +9,66 @@
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-  <header class="row align-items-center justify-content-between" id="header">
+
+  <header class="row align-items-center justify-content-between header-row" id="header">
     <h1 class="col-8">Student Grade Table</h1>
     <h3 class="col-3">Student Average <span class="badge badge-secondary"></span></h3>
   </header>
 
-  <main class="row">
-    <table class="table table-bordered table-striped col-7" id="grade-table">
-      <thead class="table-dark">
-        <th>Student Name</th>
-        <th>Course</th>
-        <th>Grade</th>
-        <th>Operations</th>
-      </thead>
-      <tbody>
+  <main>
 
-      </tbody>
-    </table>
-    <p class="d-none" id="no-grades">No Grades Recorded</p>
-    <!-- Form -->
-    <form action="" class="col-4">
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">
-            <i class="fas fa-user"></i>
-          </span>
-        </div>
-        <input type="text" id="name" name="name" placeholder="Name" class="form-control">
+    <div class="row complete-grade-row">
+      <div class="container col-9">
+        <table class="table table-bordered table-striped " id="grade-table">
+          <thead class="table-dark">
+            <th>Student Name</th>
+            <th>Course</th>
+            <th>Grade</th>
+            <th>Operations</th>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+
+        <p id="no-grades" class="d-none">No Grades Recorded</p>
       </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">
-            <i class="far fa-list-alt"></i>
-          </span>
-        </div>
-        <input type="text" id="course" name="course" placeholder="Course" class="form-control">
-      </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">
-            <i class="fas fa-graduation-cap"></i>
-          </span>
-        </div>
-        <input type="text" id="grade" name="grade" placeholder="Grade" class="form-control">
-      </div>
-      <div class="buttons">
-        <button type="submit" class="btn btn-success">Add</button>
-        <button type="reset" class="btn">Cancel</button>
-      </div>
-    </form>
+
+      <!-- Form -->
+        <form action="" class="col-3">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+            <input type="text" id="name" name="name" placeholder="Name" class="form-control">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="far fa-list-alt"></i>
+              </span>
+            </div>
+            <input type="text" id="course" name="course" placeholder="Course" class="form-control">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-graduation-cap"></i>
+              </span>
+            </div>
+            <input type="text" id="grade" name="grade" placeholder="Grade" class="form-control">
+          </div>
+          <div class="buttons">
+            <button type="submit" class="btn btn-success">Add</button>
+            <button type="reset" class="btn">Cancel</button>
+          </div>
+        </form>
+
+    </div>
+
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
